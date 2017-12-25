@@ -1,0 +1,110 @@
+// Navbar 
+.nav-top {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .brand {
+        float: left;
+        font-size: 1.7rem;
+        color: $pink;
+        margin-top: -8px;
+        letter-spacing: 1px;
+
+        a {
+            text-decoration: none;
+            color: $pink;
+        }
+    }
+
+    .nav-right {
+        float: right;
+        margin-top: 15px;
+        ul {
+
+            li {
+                display: inline-block; 
+                margin-right: 50px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $font-dark;
+
+                    &:hover {
+                        color: $font-dark;
+                    }
+
+                    &:active {
+                        border-bottom: 2px solid $pink;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: transparent;
+                    transition: width .4s ease, background-color .4s ease;
+                }
+    
+                &:hover:after {
+                    width: 100%;
+                    background: $pink;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background: url("../assets/images/slice2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 620px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.tagline {
+    color: $font-light;
+    width: 50%;
+    padding-top: 10%;
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin: 2rem 0 3rem;
+        line-height: 1.2;
+    }
+
+    button {
+        background-color: $pink;
+        border: none;
+        padding: 15px 30px;
+        color: $font-light;
+        letter-spacing: 1px;
+    }
+}
+
+// Media Queries
+
+@media screen and (min-width: 800px) {
+    .nav-right {
+        justify-content: left;
+    }
+}

@@ -1,0 +1,113 @@
+.container {
+  margin: 0 auto;
+  max-width: 1170px; }
+
+.container-fluid {
+  width: 100%; }
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%; }
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%; }
+  .half {
+    width: calc(100% / 2); }
+  .one-third {
+    width: calc(100% / 3); }
+  .one-fourth {
+    width: calc(100% / 4); }
+  .three-fourths {
+    width: calc(100% / 4 * 3); }
+  .two-thirds {
+    width: calc(100% / 3 * 2); }
+  .column {
+    float: left; } }
+
+.nav-top {
+  text-transform: uppercase;
+  font-weight: bold; }
+  .nav-top .brand {
+    float: left;
+    font-size: 1.7rem;
+    color: #F7659B;
+    margin-top: -8px;
+    letter-spacing: 1px; }
+    .nav-top .brand a {
+      text-decoration: none;
+      color: #F7659B; }
+  .nav-top .nav-right {
+    float: right;
+    margin-top: 15px; }
+    .nav-top .nav-right ul li {
+      display: inline-block;
+      margin-right: 50px; }
+      .nav-top .nav-right ul li:last-child {
+        margin: 0; }
+      .nav-top .nav-right ul li a {
+        text-decoration: none;
+        color: #282C34; }
+        .nav-top .nav-right ul li a:hover {
+          color: #282C34; }
+        .nav-top .nav-right ul li a:active {
+          border-bottom: 2px solid #F7659B; }
+      .nav-top .nav-right ul li:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .4s ease, background-color .4s ease; }
+      .nav-top .nav-right ul li:hover:after {
+        width: 100%;
+        background: #F7659B; }
+
+.hero {
+  background: url("../assets/images/slice2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 620px;
+  max-height: 100%;
+  max-width: 100%; }
+
+.tagline {
+  color: #ffffff;
+  width: 50%;
+  padding-top: 10%; }
+  .tagline h1, .tagline h2 {
+    margin: 0; }
+  .tagline h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2; }
+  .tagline h2 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin: 2rem 0 3rem;
+    line-height: 1.2; }
+  .tagline button {
+    background-color: #F7659B;
+    border: none;
+    padding: 15px 30px;
+    color: #ffffff;
+    letter-spacing: 1px; }
+
+@media screen and (min-width: 800px) {
+  .nav-right {
+    justify-content: left; } }
+
+body {
+  background-color: #F2F2F2;
+  color: #282C34;
+  font-family: 'Hind', sans-serif; }

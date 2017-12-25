@@ -1,2 +1,2 @@
-*.afdesign
-extras/
+extras/*
+images/*
