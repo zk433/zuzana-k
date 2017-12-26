@@ -2,12 +2,13 @@
 .nav-top {
     text-transform: uppercase;
     font-weight: bold;
+    height: 70px;
 
     .brand {
         float: left;
         font-size: 1.7rem;
         color: $pink;
-        margin-top: -8px;
+        margin-top: -14px;
         letter-spacing: 1px;
 
         a {
@@ -18,7 +19,7 @@
 
     .nav-right {
         float: right;
-        margin-top: 15px;
+        margin-top: 8px;
         ul {
 
             li {
@@ -91,16 +92,68 @@
         margin: 2rem 0 3rem;
         line-height: 1.2;
     }
-
-    button {
-        background-color: $pink;
-        border: none;
-        padding: 15px 30px;
-        color: $font-light;
-        letter-spacing: 1px;
-    }
 }
 
+.nav-bottom {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 60px;
+    background-color: $dark-grey;
+    
+    .brand {
+        float: left;
+        font-size: 1rem;
+        color: $pink;
+        letter-spacing: 1px;
+        margin-top: 5px;    
+
+        a {
+            text-decoration: none;
+            color: $pink;
+        }
+    }
+
+    .nav-right {
+        float: right;
+        margin-top: 9px;
+        font-size: .8rem;
+        
+        ul {
+
+            li {
+                display: inline-block; 
+                margin-right: 50px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $font-light;
+
+                    &:active {
+                        border-bottom: 2px solid $pink;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: transparent;
+                    transition: width .4s ease, background-color .4s ease;
+                }
+    
+                &:hover:after {
+                    width: 100%;
+                    background: $pink;
+                }
+            }
+        }
+    }
+}
 // Media Queries
 
 @media screen and (min-width: 800px) {

@@ -1,0 +1,34 @@
+.button-pink {
+    background-color: $pink;
+    border: none;
+    padding: 15px 30px;
+    color: $font-light;
+    letter-spacing: 1px;
+}
+
+.button-grey {
+    background-color: $dark-grey;
+    border: none;
+    padding: 15px 30px;
+    color: $font-light;
+    letter-spacing: 1px;
+}
+button {
+    outline: grey;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(black, .2);
+    }
+}

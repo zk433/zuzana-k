@@ -1,0 +1,24 @@
+.about {
+    // padding: 7rem 0;
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;        
+        color: $font-grey;
+        line-height: 1.8;
+        padding-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        color: $green-link;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    button {
+        margin: 2rem;
+        width: 10.625rem;
+    }
+}
