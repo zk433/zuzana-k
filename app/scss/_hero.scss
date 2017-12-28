@@ -1,2 +1,59 @@
-// Navbar
+.hero {
+    background: url("../assets/images/slice2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 620px;
+    max-height: 100%;
+    max-width: 100%;
 
+    .tagline {
+        padding: 20px;
+        color: $font-light;
+        padding-top: 10rem;
+        text-align: center;
+        max-width: 600px;
+
+        h1, h2 {
+            margin: 0;
+            
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin: 2rem 0 3rem;
+            line-height: 1.2;
+        }
+    }
+    @media screen and (min-width: 750px) {
+        .tagline {
+            padding-top: 8rem;
+            text-align: left;
+            width: 70%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+    }        
+
+    @media screen and (min-width: 1171px) {
+        .tagline {
+            padding-left: 0;
+            width: 50%;
+        }
+    }
+}

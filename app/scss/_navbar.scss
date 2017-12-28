@@ -79,7 +79,7 @@ nav {
   height: $nav-height;
   width: $nav-height;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: $breakpoint-navbar) {
   // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
@@ -106,7 +106,7 @@ nav {
     }
   }
 }
-@media screen and (min-width: $breakpoint) {
+@media screen and (min-width: $breakpoint-navbar) {
   .nav-list {
     display: block !important;
   }
@@ -151,43 +151,6 @@ nav {
   }
 }
 
-
-
-////////////////////// HERO ///////////////////////////
-
-
-.hero {
-    background: url("../assets/images/slice2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 620px;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.tagline {
-    color: $font-light;
-    width: 50%;
-    padding-top: 10%;
-
-    h1, h2 {
-        margin: 0;
-    }
-
-    h1 {
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: 2.25rem;
-        font-weight: 300;
-        margin: 2rem 0 3rem;
-        line-height: 1.2;
-    }
-}
 ///////////////////// NAVIGATION FOOTER //////////////////
 footer {
     .navigation-footer {
@@ -240,7 +203,7 @@ footer {
                 }
             } 
         }
-        @media screen and (max-width: $breakpoint) {
+        @media screen and (max-width: $breakpoint-navbar) {
           .nav-right {
             display: none;
           }

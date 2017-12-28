@@ -34,6 +34,46 @@
   .column {
     float: left; } }
 
+.hero {
+  background: url("../assets/images/slice2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 620px;
+  max-height: 100%;
+  max-width: 100%; }
+  .hero .tagline {
+    padding: 20px;
+    color: #ffffff;
+    padding-top: 10rem;
+    text-align: center;
+    max-width: 600px; }
+    .hero .tagline h1, .hero .tagline h2 {
+      margin: 0; }
+    .hero .tagline h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2; }
+    .hero .tagline h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 2rem 0 3rem;
+      line-height: 1.2; }
+  @media screen and (min-width: 750px) {
+    .hero .tagline {
+      padding-top: 8rem;
+      text-align: left;
+      width: 70%;
+      max-width: 600px; }
+    .hero h1 {
+      font-size: 4.5rem; }
+    .hero h2 {
+      font-size: 2.25rem; } }
+  @media screen and (min-width: 1171px) {
+    .hero .tagline {
+      padding-left: 0;
+      width: 50%; } }
+
 .navigation {
   height: 60px;
   background: #F2F2F2; }
@@ -94,7 +134,7 @@ nav {
   height: 60px;
   width: 60px; }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 810px) {
   .nav-mobile {
     display: block; }
   nav {
@@ -111,7 +151,7 @@ nav {
         nav ul li ul li a {
           padding-left: 30px; } }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 810px) {
   .nav-list {
     display: block !important; } }
 
@@ -145,31 +185,6 @@ nav {
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
-
-.hero {
-  background: url("../assets/images/slice2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 620px;
-  max-height: 100%;
-  max-width: 100%; }
-
-.tagline {
-  color: #ffffff;
-  width: 50%;
-  padding-top: 10%; }
-  .tagline h1, .tagline h2 {
-    margin: 0; }
-  .tagline h1 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1.2; }
-  .tagline h2 {
-    font-size: 2.25rem;
-    font-weight: 300;
-    margin: 2rem 0 3rem;
-    line-height: 1.2; }
 
 footer .navigation-footer {
   text-transform: uppercase;
@@ -209,7 +224,7 @@ footer .navigation-footer {
           footer .navigation-footer .nav-right ul li a:visited:active {
             background: #F7659B;
             color: #ffffff; }
-  @media screen and (max-width: 799px) {
+  @media screen and (max-width: 810px) {
     footer .navigation-footer .nav-right {
       display: none; } }
 
