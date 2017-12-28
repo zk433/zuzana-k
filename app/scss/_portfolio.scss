@@ -1,0 +1,39 @@
+.portfolio {
+    // .squares {
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    // }
+
+    // .item {
+    //     box-sizing: border-box;   
+    //     width: 33vw;
+    //     height: 33vw;
+    //     margin: 0;
+    // }   
+    display: block;
+    margin: 0 auto;
+
+    .item1 {
+        background-color: $blue-overlay;
+        height: 640px;
+        width: 640px;
+    }
+
+    .item2 {
+        background-color: $pink-overlay;
+        height: 640px;
+        width: 640px;
+    }
+
+    .item3 {
+        background-color: $purple-overlay;
+        height: 640px;
+        width: 640px;
+    }
+
+    // @media only screen and (min-width: 800px) {
+    //     .item1, .item2, .item3 {
+
+    //     }
+    // }
+}

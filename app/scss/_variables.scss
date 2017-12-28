@@ -1,7 +1,7 @@
 // sections colors
 $background-grey: #F2F2F2;
 $black-overlay-gradient: rgba(50, 54, 64, .9);
-$dark-green-gradient: linear-gradient( rgba(56, 128, 135, .9), rgba(32, 145, 152, .9));
+$dark-green-gradient: linear-gradient(45deg, rgba(56, 128, 135, .9), rgba(32, 145, 152, .9));
 
 // font colors
 $font-dark: #282C34;
@@ -19,3 +19,8 @@ $purple-overlay: rgba(113, 155, 228, .5);
 
 // link color
 $green-link: #388087;
+
+// global variables
+$content-width: 1170px;
+$breakpoint: 799px;
+$nav-height: 60px;

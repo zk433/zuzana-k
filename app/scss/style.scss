@@ -1,14 +1,25 @@
-@import '_colors';
+@import '_variables';
 @import '_grid';
 @import '_hero';
 @import '_navbar';
 @import '_buttons';
 @import '_about';
+@import '_contact';
+@import '_portfolio';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
 
 body {
     background-color: $background-grey;
     color: $font-dark;
     font-family: 'Hind', sans-serif;
+    margin: 0;
 }
 
 .wrapper-center {
@@ -18,43 +29,4 @@ body {
 
 .wrapper {
     padding: 7rem 0;
-}
-
-.portfolio {
-    .squares {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .item {
-        box-sizing: border-box;   
-        width: 33vw;
-        height: 33vw;
-        margin: 0;
-    }
-
-    .item1 {
-        background-color: $blue-overlay;
-    }
-
-    .item2 {
-        background-color: $pink-overlay;
-    }
-
-    .item3 {
-        background-color: $purple-overlay;
-    }
-}
-
-.contact {
-    background-image: $dark-green-gradient;
-    height: 30rem;
-}
-
-.copyright {
-    text-align: center;
-    
-    p {
-        margin: 10px;
-    }
 }
