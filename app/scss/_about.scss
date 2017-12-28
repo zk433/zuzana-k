@@ -1,13 +1,11 @@
 .about {
-    // padding: 7rem 0;
 
     p {
-        width: 50%;
         margin: 0 auto;
         text-align: center;        
         color: $font-grey;
         line-height: 1.8;
-        padding-bottom: 2rem;
+        padding: 0 1rem 2rem;
         font-size: 1.2rem;
     }
     
@@ -19,6 +17,25 @@
 
     button {
         margin: 2rem;
-        width: 10.625rem;
+        margin-bottom: .5rem;
+        width: 20rem;
+    }
+
+    @media screen and (min-width: 710px) {
+        p {
+            padding-bottom: 2rem;
+            width: 80%;
+        }
+
+        button {
+            width: 10.625rem;
+        }
+    }
+
+    @media screen and (min-width: 1171px) {
+        p {
+            padding-bottom: 2rem;
+            width: 50%;
+        }
     }
 }

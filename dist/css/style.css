@@ -59,7 +59,7 @@
       font-weight: 300;
       margin: 2rem 0 3rem;
       line-height: 1.2; }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 710px) {
     .hero .tagline {
       padding-top: 8rem;
       text-align: left;
@@ -261,12 +261,11 @@ button {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .about p {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   color: #808080;
   line-height: 1.8;
-  padding-bottom: 2rem;
+  padding: 0 1rem 2rem;
   font-size: 1.2rem; }
 
 .about a {
@@ -276,7 +275,20 @@ button {
 
 .about button {
   margin: 2rem;
-  width: 10.625rem; }
+  margin-bottom: .5rem;
+  width: 20rem; }
+
+@media screen and (min-width: 710px) {
+  .about p {
+    padding-bottom: 2rem;
+    width: 80%; }
+  .about button {
+    width: 10.625rem; } }
+
+@media screen and (min-width: 1171px) {
+  .about p {
+    padding-bottom: 2rem;
+    width: 50%; } }
 
 .contact {
   background-image: linear-gradient(45deg, rgba(56, 128, 135, 0.9), rgba(32, 145, 152, 0.9));
