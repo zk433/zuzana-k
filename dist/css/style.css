@@ -171,47 +171,51 @@ nav {
     margin: 2rem 0 3rem;
     line-height: 1.2; }
 
-.nav-bottom {
+footer .navigation-footer {
   text-transform: uppercase;
   font-weight: bold;
   height: 60px;
   background-color: #4D4D4D; }
-  .nav-bottom .brand {
+  footer .navigation-footer .brand {
     float: left;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #F7659B;
     letter-spacing: 1px; }
-    .nav-bottom .brand a {
+    footer .navigation-footer .brand a, footer .navigation-footer .brand a:visited {
       text-decoration: none;
       color: #F7659B; }
-  .nav-bottom .nav-right {
+  footer .navigation-footer .nav-right {
     float: right;
-    margin-top: 9px;
     font-size: .8rem; }
-    .nav-bottom .nav-right ul li {
-      display: inline-block;
-      margin-right: 50px; }
-      .nav-bottom .nav-right ul li:last-child {
-        margin: 0; }
-      .nav-bottom .nav-right ul li a {
-        text-decoration: none;
-        color: #ffffff; }
-        .nav-bottom .nav-right ul li a:active {
-          border-bottom: 2px solid #F7659B; }
-      .nav-bottom .nav-right ul li:after {
-        content: '';
-        display: block;
-        height: 2px;
-        width: 0;
-        background: transparent;
-        transition: width .4s ease, background-color .4s ease; }
-      .nav-bottom .nav-right ul li:hover:after {
-        width: 100%;
-        background: #F7659B; }
+    footer .navigation-footer .nav-right ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      footer .navigation-footer .nav-right ul li {
+        float: left;
+        position: relative; }
+        footer .navigation-footer .nav-right ul li a,
+        footer .navigation-footer .nav-right ul li a:visited {
+          display: block;
+          text-transform: uppercase;
+          padding: 0 20px;
+          line-height: 60px;
+          background: #4D4D4D;
+          color: #ffffff;
+          font-weight: 700;
+          text-decoration: none; }
+          footer .navigation-footer .nav-right ul li a:hover, footer .navigation-footer .nav-right ul li a:active,
+          footer .navigation-footer .nav-right ul li a:visited:hover,
+          footer .navigation-footer .nav-right ul li a:visited:active {
+            background: #F7659B;
+            color: #ffffff; }
+  @media screen and (max-width: 799px) {
+    footer .navigation-footer .nav-right {
+      display: none; } }
 
-.copyright {
+footer .copyright {
   text-align: center; }
-  .copyright p {
+  footer .copyright p {
     margin: 10px; }
 
 .button-pink {
