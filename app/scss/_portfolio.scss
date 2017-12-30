@@ -1,17 +1,47 @@
 .portfolio {
+    background: white;
+    padding: 7rem 0;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        max-width: 485px;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: $font-offblack;
+    }
+
+    p {
+        margin: 0 auto;
+        text-align: center;        
+        color: $font-grey;
+        line-height: 1.8;
+        padding: 0 1rem 5rem;
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .item1, .item2, .item3 {
+        height: 100vw;
+        margin-bottom: 1rem;
+    }
+
     .item1 {
         background-color: $blue-overlay;
-        height: 100vw;
+        
     }
 
     .item2 {
         background-color: $pink-overlay;
-        height: 100vw;
+        
     }
 
     .item3 {
         background-color: $purple-overlay;
-        height: 100vw;
+        
     }
 
     @media only screen and (min-width: 500px) and (max-width: 799px) {
@@ -19,6 +49,7 @@
             max-width: 90%;
             height: 90vw;
             margin: 0 auto;
+            margin-bottom: 2rem;
         }
     }
 

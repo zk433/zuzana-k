@@ -1,5 +1,14 @@
 .about {
-
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        max-width: 485px;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: $font-offblack;
+    }
     p {
         margin: 0 auto;
         text-align: center;        
@@ -18,7 +27,8 @@
     button {
         margin: 2rem;
         margin-bottom: .5rem;
-        width: 80%;
+        width: 250px;
+        max-width: 60%;
     }
 
     @media screen and (min-width: 710px) {

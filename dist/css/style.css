@@ -260,6 +260,16 @@ button {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.about h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  max-width: 485px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #333333; }
+
 .about p {
   margin: 0 auto;
   text-align: center;
@@ -276,7 +286,8 @@ button {
 .about button {
   margin: 2rem;
   margin-bottom: .5rem;
-  width: 80%; }
+  width: 250px;
+  max-width: 60%; }
 
 @media screen and (min-width: 710px) {
   .about p {
@@ -290,40 +301,45 @@ button {
     padding-bottom: 2rem;
     width: 50%; } }
 
-.contact {
-  background-image: linear-gradient(45deg, rgba(56, 128, 135, 0.9), rgba(32, 145, 152, 0.9));
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 300; }
-  .contact p {
-    width: 50%;
+.portfolio {
+  background: white;
+  padding: 7rem 0;
+  margin: 0 auto; }
+  .portfolio h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 3rem;
+    max-width: 485px;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: #333333; }
+  .portfolio p {
     margin: 0 auto;
     text-align: center;
+    color: #808080;
     line-height: 1.8;
-    padding-bottom: 2rem;
-    font-size: 1.2rem; }
-
-.portfolio .item1 {
-  background-color: rgba(25, 114, 120, 0.5);
-  height: 100vw; }
-
-.portfolio .item2 {
-  background-color: rgba(247, 101, 155, 0.5);
-  height: 100vw; }
-
-.portfolio .item3 {
-  background-color: rgba(113, 155, 228, 0.5);
-  height: 100vw; }
-
-@media only screen and (min-width: 500px) and (max-width: 799px) {
+    padding: 0 1rem 5rem;
+    font-size: 1.2rem;
+    max-width: 600px; }
   .portfolio .item1, .portfolio .item2, .portfolio .item3 {
-    max-width: 90%;
-    height: 90vw;
-    margin: 0 auto; } }
-
-@media only screen and (min-width: 800px) {
-  .portfolio .item1, .portfolio .item2, .portfolio .item3 {
-    height: 33.33vw; } }
+    height: 100vw;
+    margin-bottom: 1rem; }
+  .portfolio .item1 {
+    background-color: rgba(25, 114, 120, 0.5); }
+  .portfolio .item2 {
+    background-color: rgba(247, 101, 155, 0.5); }
+  .portfolio .item3 {
+    background-color: rgba(113, 155, 228, 0.5); }
+  @media only screen and (min-width: 500px) and (max-width: 799px) {
+    .portfolio .item1, .portfolio .item2, .portfolio .item3 {
+      max-width: 90%;
+      height: 90vw;
+      margin: 0 auto;
+      margin-bottom: 2rem; } }
+  @media only screen and (min-width: 800px) {
+    .portfolio .item1, .portfolio .item2, .portfolio .item3 {
+      height: 33.33vw; } }
 
 html {
   box-sizing: border-box; }
@@ -337,9 +353,145 @@ body {
   font-family: 'Hind', sans-serif;
   margin: 0; }
 
+main {
+  margin: 0;
+  padding: 0; }
+
 .wrapper-center {
   display: block;
   text-align: center; }
 
 .wrapper {
   padding: 7rem 0; }
+
+.services h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  max-width: 485px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #333333; }
+
+.services p {
+  margin: 0 auto;
+  text-align: center;
+  color: #808080;
+  line-height: 1.8;
+  padding: 0 1rem 5rem;
+  font-size: 1.2rem;
+  max-width: 600px; }
+
+.services .card {
+  border: 1px solid lightgrey;
+  max-width: 90%; }
+  .services .card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgba(56, 128, 135, 0.9), rgba(32, 145, 152, 0.9));
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    margin: 0; }
+  .services .card .insideCard p {
+    text-align: left; }
+  .services .card .insideCard ul {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 2rem; }
+    .services .card .insideCard ul li {
+      font-size: 1.2rem;
+      color: #808080;
+      padding-bottom: 1.5rem; }
+      .services .card .insideCard ul li:last-child {
+        padding-bottom: 0; }
+      .services .card .insideCard ul li a {
+        color: #388087;
+        font-weight: 700;
+        text-decoration: none; }
+  .services .card .insideCard .buttonWrapper {
+    text-align: center; }
+
+.contact {
+  background-image: linear-gradient(45deg, rgba(56, 128, 135, 0.9), rgba(32, 145, 152, 0.9));
+  color: #ffffff;
+  font-weight: 300; }
+  .contact div {
+    padding-bottom: 1.5rem; }
+  .contact h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 3rem;
+    max-width: 485px;
+    margin: 0 auto;
+    font-size: 2rem; }
+  .contact p {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.8;
+    padding: 0 1rem 2rem;
+    font-size: 1.2rem; }
+  .contact form {
+    text-align: center; }
+    .contact form label {
+      display: inline-block;
+      text-align: right;
+      margin-right: 1rem;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .contact form input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      outline-color: #F7659B; }
+      .contact form input:focus, .contact form input:active {
+        background: none;
+        color: #ffffff; }
+    .contact form textarea {
+      margin: 0 auto;
+      display: block;
+      box-sizing: border-box;
+      width: 95%;
+      max-width: 550px;
+      height: 95vw;
+      max-height: 300px;
+      border: none; }
+      .contact form textarea::-webkit-input-placeholder {
+        color: lightslategrey;
+        padding: 1rem;
+        font-style: italic; }
+      .contact form textarea:-moz-placeholder {
+        color: lightslategrey;
+        padding: 1rem;
+        font-style: italic; }
+      .contact form textarea::-moz-placeholder {
+        color: lightslategrey;
+        padding: 1rem;
+        font-style: italic; }
+      .contact form textarea:focus, .contact form textarea:active {
+        background: #ffffff; }
+    .contact form button {
+      width: 200px;
+      max-width: 60%; }
+  @media screen and (min-width: 710px) {
+    .contact p {
+      padding-bottom: 2rem;
+      width: 80%; } }
+  @media screen and (min-width: 800px) {
+    .contact form .inputFields {
+      margin-top: 5rem; }
+    .contact form textarea {
+      width: 80%;
+      max-width: 400px;
+      height: 80vw;
+      max-height: 300px;
+      margin: 0; } }
+  @media screen and (min-width: 1171px) {
+    .contact p {
+      padding-bottom: 2rem;
+      width: 50%; } }
+
+/* end contact session */
