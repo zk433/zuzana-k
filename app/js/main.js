@@ -2,8 +2,6 @@ $(document).ready(function() {
     // Toggle open and close nav styles on click
     $('#nav-toggle').click(function() {
         $('.nav-list').slideToggle();
-        //$('#main, .hero, .navigation-footer, .copyright').toggleClass("none");
-        
     });
     $('.nav-list li a').click(function(){
         $('.nav-list').toggle('active');

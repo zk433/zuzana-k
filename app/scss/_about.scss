@@ -29,6 +29,10 @@
         margin-bottom: .5rem;
         width: 250px;
         max-width: 60%;
+
+        a {
+            color: $font-light;
+        }
     }
 
     @media screen and (min-width: 710px) {

@@ -79,8 +79,7 @@
   background: #F2F2F2;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 9; }
+  width: 100%; }
 
 .nav-container {
   max-width: 1170px;
@@ -244,6 +243,10 @@ footer .copyright {
   padding: 15px 30px;
   color: #ffffff;
   letter-spacing: 1px; }
+  .button-pink a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700; }
 
 .button-grey {
   background-color: #4D4D4D;
@@ -251,6 +254,10 @@ footer .copyright {
   padding: 15px 30px;
   color: #ffffff;
   letter-spacing: 1px; }
+  .button-grey a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700; }
 
 button {
   outline: grey;
@@ -293,6 +300,8 @@ button {
   margin-bottom: .5rem;
   width: 250px;
   max-width: 60%; }
+  .about button a {
+    color: #ffffff; }
 
 @media screen and (min-width: 710px) {
   .about p {
@@ -368,7 +377,8 @@ button {
         background: #ffffff; }
     .contact form button {
       width: 200px;
-      max-width: 60%; }
+      max-width: 60%;
+      font-weight: 700; }
   @media screen and (min-width: 710px) {
     .contact p {
       padding-bottom: 2rem;
@@ -527,9 +537,6 @@ body {
 main {
   margin: 0;
   padding: 0; }
-
-.none {
-  display: none; }
 
 .wrapper-center {
   display: block;
