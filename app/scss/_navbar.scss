@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+<<<<<<< HEAD
 
 }
 
@@ -14,6 +15,9 @@
 .nav-container {
   max-width: $content-width;
   margin: 0 auto;
+=======
+  z-index: 9;
+>>>>>>> version1.0_bug
 }
 
 // Logo and branding
@@ -39,7 +43,16 @@
 }
     
 
+<<<<<<< HEAD
 
+=======
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+
+}
+>>>>>>> version1.0_bug
 
 // Navigation 
 nav {

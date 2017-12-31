@@ -1,6 +1,16 @@
 $(document).ready(function() {
     // Toggle open and close nav styles on click
+    // $('#nav-toggle').click(function() {
+    //     $('.nav-list').slideToggle();
+    //     });
+    // // Hamburger to X toggle
+    // $('#nav-toggle').on('click', function() {
+    //     this.classList.toggle('active');
+    // });
+
+    // Toggle open and close nav styles on click
     $('#nav-toggle').click(function() {
+<<<<<<< HEAD
         $('.nav-list').slideToggle();
     });
     $('.nav-list li a').click(function(){
@@ -23,6 +33,22 @@ $(document).ready(function() {
         .not('[href="#0"]')
         .click(function(event) {
         // On-page links
+=======
+        $('.nav-list').slideToggle();        
+    });
+    $('.nav-list li a').click(function(){
+        $('.nav-list').toggle();
+    });
+
+        /* Smooth scrolling */
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+    // On-page links
+>>>>>>> version1.0_bug
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
             && 

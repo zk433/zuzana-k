@@ -5,12 +5,16 @@
     padding: 15px 30px;
     color: $font-light;
     letter-spacing: 1px;
+<<<<<<< HEAD
 
     a {
         color: $font-light;
         text-decoration: none;
         font-weight: 700;
     }
+=======
+    font-weight: 700;
+>>>>>>> version1.0_bug
 }
 
 .button-grey {
@@ -29,6 +33,12 @@
 button {
     outline: grey;
     transition: all .3s;
+    
+    a {
+        color: $font-light;
+        text-decoration: none;
+        font-weight: 700;
+    }
 
     &:hover {
         transform: translateY(-3px);
