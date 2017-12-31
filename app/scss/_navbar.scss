@@ -4,6 +4,10 @@
 .navigation {
   height: $nav-height;
   background: $background-grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 
 // Logo and branding
@@ -33,6 +37,7 @@
 .nav-container {
   max-width: $content-width;
   margin: 0 auto;
+
 }
 
 // Navigation 
