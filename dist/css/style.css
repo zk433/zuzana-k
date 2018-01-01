@@ -79,16 +79,8 @@
   background: #F2F2F2;
   position: fixed;
   top: 0;
-<<<<<<< HEAD
-  width: 100%; }
-
-.nav-container {
-  max-width: 1170px;
-  margin: 0 auto; }
-=======
   width: 100%;
   z-index: 9; }
->>>>>>> version1.0_bug
 
 .brand {
   position: absolute;
@@ -106,6 +98,10 @@
 @media screen and (min-width: 1171px) {
   .brand {
     padding-left: 0; } }
+
+.nav-container {
+  max-width: 1170px;
+  margin: 0 auto; }
 
 nav {
   float: right; }
@@ -247,16 +243,8 @@ footer .copyright {
   border: none;
   padding: 15px 30px;
   color: #ffffff;
-<<<<<<< HEAD
-  letter-spacing: 1px; }
-  .button-pink a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700; }
-=======
   letter-spacing: 1px;
   font-weight: 700; }
->>>>>>> version1.0_bug
 
 .button-grey {
   background-color: #4D4D4D;
@@ -315,7 +303,8 @@ button {
   width: 250px;
   max-width: 60%; }
   .about button a {
-    color: #ffffff; }
+    color: #ffffff;
+    display: block; }
 
 @media screen and (min-width: 710px) {
   .about p {
@@ -391,8 +380,7 @@ button {
         background: #ffffff; }
     .contact form button {
       width: 200px;
-      max-width: 60%;
-      font-weight: 700; }
+      max-width: 60%; }
   @media screen and (min-width: 710px) {
     .contact p {
       padding-bottom: 2rem;
@@ -411,10 +399,7 @@ button {
       padding-bottom: 2rem;
       width: 50%; } }
 
-<<<<<<< HEAD
-=======
 /* end contact session */
->>>>>>> version1.0_bug
 .portfolio {
   background: white;
   padding: 7rem 0;
@@ -440,11 +425,45 @@ button {
     height: 100vw;
     margin-bottom: 1rem; }
   .portfolio .item1 {
-    background-color: rgba(25, 114, 120, 0.5); }
+    background: linear-gradient(rgba(25, 114, 120, 0.5), rgba(25, 114, 120, 0.5)), url("../assets/images/clock.jpg");
+    background-size: cover;
+    background-position: 25% 28%;
+    transition: all 1s;
+    position: relative; }
+    .portfolio .item1:hover {
+      background: url("../assets/images/clock.jpg");
+      background-size: cover;
+      background-position: 0% 32%; }
+      .portfolio .item1:hover a {
+        text-decoration: none;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        opacity: .5; }
+        .portfolio .item1:hover a:hover {
+          opacity: 1; }
+    .portfolio .item1 a {
+      display: none; }
   .portfolio .item2 {
-    background-color: rgba(247, 101, 155, 0.5); }
+    background: linear-gradient(rgba(247, 101, 155, 0.5), rgba(247, 101, 155, 0.5)), url("../assets/images/materialDesign.jpg");
+    background-size: cover;
+    background-position: left center;
+    transition: all 1s; }
+    .portfolio .item2:hover {
+      background: url("../assets/images/materialDesign.jpg");
+      background-size: cover;
+      background-position: right center; }
   .portfolio .item3 {
-    background-color: rgba(113, 155, 228, 0.5); }
+    background: linear-gradient(rgba(113, 155, 228, 0.5), rgba(113, 155, 228, 0.5)), url("../assets/images/agency.jpg");
+    background-size: cover;
+    background-position: 25% 0%;
+    transition: all 1s; }
+    .portfolio .item3:hover {
+      background: url("../assets/images/agency.jpg");
+      background-size: cover;
+      background-position: 25% 60%; }
   @media only screen and (min-width: 500px) and (max-width: 799px) {
     .portfolio .item1, .portfolio .item2, .portfolio .item3 {
       max-width: 90%;
