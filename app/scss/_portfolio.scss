@@ -31,73 +31,21 @@
     }
 
     .item1 {
-        background: linear-gradient(
-                     rgba(25, 114, 120, .5), 
-                     rgba(25, 114, 120, .5)),
-                     url("../assets/images/clock.jpg");
+        background: url("../assets/images/clock.jpg");
         background-size: cover;
         background-position: 25% 28%;
-        transition: all 1s;
-        position: relative;
-
-        
-
-        &:hover {
-            background: url("../assets/images/clock.jpg");
-            background-size: cover;
-            background-position: 0% 32%;
-            a {
-                text-decoration: none;
-                color: $font-light;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                display: block;
-                opacity: .5;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-
-        a {
-            display: none;
-        }
-
     }
 
     .item2 {
-        background: linear-gradient(
-                     rgba(247, 101, 155, .5), 
-                     rgba(247, 101, 155, .5)),
-                     url("../assets/images/materialDesign.jpg");
+        background: url("../assets/images/materialDesign.jpg");
         background-size: cover;
-        background-position: left center;
-        transition: all 1s;
-
-        &:hover {
-            background: url("../assets/images/materialDesign.jpg");
-            background-size: cover;
-            background-position: right center;
-        }
+        background-position: center;
     }
 
     .item3 {
-       
-        background: linear-gradient(
-                     rgba(113, 155, 228, .5), 
-                     rgba(113, 155, 228, .5)),
-                     url("../assets/images/agency.jpg");
+        background: url("../assets/images/agency.jpg");
         background-size: cover;
         background-position: 25% 0%;
-        transition: all 1s;
-
-        &:hover {
-            background: url("../assets/images/agency.jpg");
-            background-size: cover;
-            background-position: 25% 60%;
-        }
     }
 
     @media only screen and (min-width: 500px) and (max-width: 799px) {
@@ -112,6 +60,53 @@
     @media only screen and (min-width: 800px) {
         .item1, .item2, .item3 {
             height: 33.33vw;
+        }
+        .item1 {
+            background: linear-gradient(
+                         rgba(25, 114, 120, .5), 
+                         rgba(25, 114, 120, .5)),
+                         url("../assets/images/clock.jpg");
+            background-size: cover;
+            background-position: 25% 28%;
+            transition: all 1s;
+            position: relative;
+            
+            &:hover {
+                background: url("../assets/images/clock.jpg");
+                background-size: cover;
+                background-position: 0% 32%;
+            }
+        }
+
+        .item2 {
+            background: linear-gradient(
+                         rgba(247, 101, 155, .5), 
+                         rgba(247, 101, 155, .5)),
+                         url("../assets/images/materialDesign.jpg");
+            background-size: cover;
+            background-position: left center;
+            transition: all 1s;
+    
+            &:hover {
+                background: url("../assets/images/materialDesign.jpg");
+                background-size: cover;
+                background-position: right center;
+            }
+        }
+        .item3 {
+            background: linear-gradient(
+                      rgba(50, 54, 64, .5), 
+                      rgba(50, 54, 64, .5)),
+                        url("../assets/images/agency.jpg");
+            background-size: cover;
+            background-position: 25% 0%;
+            transition: all 1s;
+    
+            &:hover {
+                background: url("../assets/images/agency.jpg");
+                background-size: cover;
+                background-position: 25% 60%;
+            }
         }
     }
 }   
