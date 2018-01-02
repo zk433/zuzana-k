@@ -351,7 +351,8 @@ button {
       background: transparent;
       border: none;
       border-bottom: 1px solid #ffffff;
-      outline-color: #F7659B; }
+      outline-color: #F7659B;
+      color: #ffffff; }
       .contact form input:focus, .contact form input:active {
         background: none;
         color: #ffffff; }
@@ -363,18 +364,17 @@ button {
       max-width: 550px;
       height: 95vw;
       max-height: 300px;
-      border: none; }
+      border: none;
+      color: #808080;
+      padding: 1rem; }
       .contact form textarea::-webkit-input-placeholder {
         color: lightslategrey;
-        padding: 1rem;
         font-style: italic; }
       .contact form textarea:-moz-placeholder {
         color: lightslategrey;
-        padding: 1rem;
         font-style: italic; }
       .contact form textarea::-moz-placeholder {
         color: lightslategrey;
-        padding: 1rem;
         font-style: italic; }
       .contact form textarea:focus, .contact form textarea:active {
         background: #ffffff; }
@@ -558,6 +558,186 @@ button {
   .services .card {
     max-width: 90%;
     margin: 0 auto; } }
+
+#clock {
+  background: white; }
+
+.clock .box {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 420px;
+  height: 600px; }
+
+.clock .clock-face {
+  position: absolute;
+  top: 52%;
+  left: initial;
+  right: 25%;
+  transform: rotate(initialdeg);
+  rotate: initial;
+  width: 25%;
+  height: 17%;
+  background: #243553;
+  border-radius: 50%;
+  border: 1px solid #745D60;
+  box-shadow: 0px 0px 75px 0px grey; }
+
+.clock .clock-face-copy {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  right: initial;
+  transform: rotate(initialdeg);
+  rotate: initial;
+  width: 95%;
+  height: 95%;
+  background: #243553;
+  border-radius: 50%;
+  z-index: 2; }
+  .clock .clock-face-copy .middle {
+    position: absolute;
+    top: 43%;
+    left: 44%;
+    right: initial;
+    transform: rotate(initialdeg);
+    rotate: initial;
+    width: 15%;
+    height: 15%;
+    background: #F2F2F2;
+    border-radius: 50%;
+    border: 1px solid grey;
+    box-shadow: -1px -1px 0px 0px #BFBFBF; }
+  .clock .clock-face-copy .middle:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: initial;
+    transform: rotate(initialdeg);
+    rotate: initial;
+    width: 50%;
+    height: 50%;
+    background: #BFBFBF;
+    border-radius: 50%;
+    border: 1px solid grey;
+    z-index: 1; }
+
+.clock .hours {
+  position: absolute;
+  top: -6%;
+  left: 49%;
+  right: initial;
+  transform: rotate(initialdeg);
+  rotate: initial;
+  width: 5%;
+  height: 70%;
+  background: #F2F2F2;
+  transform-origin: 50% 80%;
+  animation: rotate 43200s infinite linear; }
+
+.clock .minutes {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  right: initial;
+  transform: rotate(initialdeg);
+  rotate: initial;
+  width: 3%;
+  height: 100%;
+  background: #F2F2F2;
+  transform-origin: 50% 75%;
+  animation: rotate 3600s infinite steps(60); }
+
+.clock .seconds {
+  position: absolute;
+  top: -44%;
+  left: 52%;
+  right: initial;
+  transform: rotate(initialdeg);
+  rotate: initial;
+  width: 2%;
+  height: 120%;
+  background: red;
+  transform-origin: 50% 80%;
+  animation: rotate 60s infinite steps(60); }
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg); } }
+
+.clock .time .one {
+  position: absolute;
+  top: 44.5%;
+  left: initial;
+  right: 44%;
+  transform: rotate(30deg);
+  rotate: 30;
+  width: 2.5%;
+  height: 52%;
+  background: #745D60;
+  z-index: 1; }
+
+.clock .time .two {
+  position: absolute;
+  top: 36.5%;
+  left: initial;
+  right: 50%;
+  transform: rotate(60deg);
+  rotate: 60;
+  width: 2.5%;
+  height: 60%;
+  background: #745D60;
+  z-index: 1; }
+
+.clock .time .three {
+  position: absolute;
+  top: 28.5%;
+  left: 45%;
+  right: initial;
+  transform: rotate(90deg);
+  rotate: 90;
+  width: 2.5%;
+  height: 65%;
+  background: #745D60;
+  z-index: 1; }
+
+.clock .time .four {
+  position: absolute;
+  top: 15%;
+  left: 44.5%;
+  right: initial;
+  transform: rotate(120deg);
+  rotate: 120;
+  width: 2.5%;
+  height: 78%;
+  background: #745D60;
+  z-index: 1; }
+
+.clock .time .five {
+  position: absolute;
+  top: 8%;
+  left: 53%;
+  right: initial;
+  transform: rotate(150deg);
+  rotate: 150;
+  width: 2.5%;
+  height: 85%;
+  background: #745D60;
+  z-index: 1; }
+
+.clock .time .six {
+  position: absolute;
+  top: 0%;
+  left: initial;
+  right: 36%;
+  transform: rotate(180deg);
+  rotate: 180;
+  width: 2.5%;
+  height: 95%;
+  background: #745D60;
+  z-index: 1; }
 
 html {
   box-sizing: border-box; }

@@ -43,6 +43,7 @@
             border: none;
             border-bottom: 1px solid $font-light;
             outline-color: $pink;
+            color: $font-light;
 
             &:focus, &:active {
                
@@ -59,21 +60,20 @@
             height: 95vw;
             max-height: 300px;
             border: none;
+            color: $font-grey;
+            padding: 1rem;
     
             &::-webkit-input-placeholder {
                 color: lightslategrey;
-                padding: 1rem;
                 font-style: italic;
             }
             &:-moz-placeholder{
                 color: lightslategrey;
-                padding: 1rem;
                 font-style: italic;
             }
     
             &::-moz-placeholder {
                 color: lightslategrey;
-                padding: 1rem;
                 font-style: italic;
             }
     
