@@ -1,0 +1,39 @@
+@import '_variables';
+@import '_grid';
+@import '_hero';
+@import '_navbar';
+@import '_buttons';
+@import '_about';
+@import '_contact';
+@import '_portfolio';
+@import '_services';
+@import '_clock';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+    background-color: $background-grey;
+    color: $font-dark;
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-center {
+    display: block;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 7rem 0;
+}

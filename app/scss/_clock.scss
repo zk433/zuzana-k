@@ -1,0 +1,152 @@
+// Colours
+$clock-background-grey: #DBE4E9;
+$clock-slate-grey: #243553;
+$clock-light-grey: #F2F2F2;
+$clock-darker-grey: #BFBFBF;
+$clock-brown: #745D60;
+
+// Mixins
+@mixin posAbs($top, $left, $right) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+}
+
+@mixin transform($transform) {
+  transform: $transform;
+}
+
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@mixin dims($width, $height, $deg) {
+  @include rotate($deg);
+  rotate: $deg;
+  width: $width;
+  height: $height;
+}
+
+@mixin time {
+  background: $clock-brown;
+  z-index: 1;
+}
+
+#clock {
+    background: white;
+}
+
+.clock {
+
+    .box {
+        position: relative;
+          display: block;
+          margin: 0 auto;
+          margin-top: 2%;
+          //border: 1px solid grey;
+          width: 420px;
+          height: 600px;
+      }
+      
+      .clock-face {
+          @include posAbs(52%, initial, 25%);
+          @include dims(25%, 17%, initial);
+          background: $clock-slate-grey;
+          border-radius: 50%;
+        border: 1px solid $clock-brown;
+        box-shadow: 0px 0px 75px 0px grey;
+      }
+      
+      .clock-face-copy {
+          @include posAbs(2.5%, 2.5%, initial);
+          @include dims(95%, 95%, initial);
+          background: $clock-slate-grey;
+          border-radius: 50%;
+        z-index: 2;
+        
+          .middle {
+          @include posAbs(43%, 44%, initial);
+          @include dims(15%, 15%, initial);
+          background: $clock-light-grey;
+          border-radius: 50%;
+          border: 1px solid grey;
+          box-shadow: -1px -1px 0px 0px $clock-darker-grey; 
+        }
+        
+        .middle:after {
+          content: "";
+          @include posAbs(20%, 20%, initial);
+          @include dims(50%, 50%, initial);
+          background: $clock-darker-grey;
+          border-radius: 50%;
+          border: 1px solid grey;
+          z-index: 1;
+        }
+      }
+      
+      .hours {
+        @include posAbs(-6%, 49%, initial);
+        @include dims(5%, 70%, initial);
+        background: $clock-light-grey;
+        transform-origin: 50% 80%;
+        animation: rotate 43200s infinite linear;
+      }
+      
+      
+      .minutes {
+        @include posAbs(-25%, 50%, initial);
+        @include dims(3%, 100%, initial);
+        background: $clock-light-grey;
+        transform-origin: 50% 75%;
+        animation: rotate 3600s infinite steps(60);
+      }
+      
+      .seconds {
+        @include posAbs(-44%, 52%, initial);
+        @include dims(2%, 120%, initial);
+        background: red;
+        transform-origin: 50% 80%;
+        animation: rotate 60s infinite steps(60);
+      }
+      
+      @keyframes rotate {
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+      
+      .time {   
+        .one {
+          @include posAbs(44.5%, initial, 44%);
+          @include dims(2.5%, 52%, 30);
+          @include time;
+        }  
+        .two {
+          @include posAbs(36.5%, initial, 50%);
+          @include dims(2.5%, 60%, 60);
+          @include time;
+        } 
+        .three {
+          @include posAbs(28.5%, 45%, initial);
+          @include dims(2.5%, 65%, 90);
+          @include time;
+        } 
+        .four {
+          @include posAbs(15%, 44.5%, initial);
+          @include dims(2.5%, 78%, 120);
+          @include time;
+        } 
+        .five {
+          @include posAbs(8%, 53%, initial);
+          @include dims(2.5%, 85%, 150);
+          @include time;
+        } 
+        .six {
+          @include posAbs(0%, initial, 36%);
+          @include dims(2.5%, 95%, 180);
+          @include time;
+        } 
+      }
+      
+}

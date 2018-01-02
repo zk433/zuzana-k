@@ -1,0 +1,226 @@
+// Navbar 
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $background-grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+// Logo and branding
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: $nav-height;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 700;
+    a,
+    a:visited {
+        color: $pink;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 1171px) {
+    .brand {
+        padding-left: 0;
+    }
+}
+    
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+
+}
+
+// Navigation 
+nav {
+  float: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        text-transform: uppercase;
+        padding: 0 20px;
+        line-height: $nav-height;
+        background: $background-grey;
+        color: $font-dark;
+        font-weight: 700;
+        text-decoration: none;
+        
+        &:hover, &:active {
+          background: $pink;
+          color: $font-light;
+        }
+       
+      } 
+    }
+  }
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $background-grey;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: $breakpoint-navbar) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+   width: 100%;
+    padding: $nav-height 0 0;
+    background: #F2F2F2;
+    
+    ul {
+      display: none;
+      li {
+        float: none;
+        
+        a {
+          padding: 20px;
+          line-height: 20px;
+          text-align: center;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint-navbar) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+    span,
+    span:before,
+    span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $font-dark;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+///////////////////// NAVIGATION FOOTER //////////////////
+footer {
+    .navigation-footer {
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 60px;
+        background-color: $dark-grey;
+        
+        
+        .brand {
+            float: left;
+            font-size: 1rem;
+            color: $pink;
+            letter-spacing: 1px;
+            a, a:visited {
+                text-decoration: none;
+                color: $pink;
+            }
+        }
+    
+        .nav-right {        
+            float: right;
+            font-size: .8rem;
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    float: left;
+                    position: relative;
+
+                        a,
+                        a:visited {
+                        display: block;
+                        text-transform: uppercase;
+                        padding: 0 20px;
+                        line-height: $nav-height;
+                        background: $dark-grey;
+                        color: $font-light;
+                        font-weight: 700;
+                        text-decoration: none;
+                        
+                        &:hover, &:active {
+                            background: $pink;
+                            color: $font-light;
+                        }
+                    } 
+                }
+            } 
+        }
+        @media screen and (max-width: $breakpoint-navbar) {
+          .nav-right {
+            display: none;
+          }
+        }
+
+    }
+    
+    .copyright {
+        text-align: center;
+        
+        p {
+            margin: 10px;
+        }
+    }
+}

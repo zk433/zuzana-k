@@ -1,0 +1,120 @@
+// contact
+.contact {
+    background-image: $dark-green-gradient;
+    color: $font-light;
+    font-weight: 300;
+
+    div{
+        padding-bottom: 1.5rem;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        max-width: 485px;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0 auto;
+        text-align: center;        
+        color: $font-light;
+        line-height: 1.8;
+        padding: 0 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    form {
+        text-align: center;
+
+        label {
+            display: inline-block;
+            text-align: right;
+            margin-right: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $font-light;
+            outline-color: $pink;
+            color: $font-light;
+
+            &:focus, &:active {
+               
+                background: none;
+                color: $font-light;
+            }
+        }
+        textarea {
+            margin: 0 auto;
+            display: block;
+            box-sizing: border-box;
+            width: 95%;
+            max-width: 550px;
+            height: 95vw;
+            max-height: 300px;
+            border: none;
+            color: $font-grey;
+            padding: 1rem;
+    
+            &::-webkit-input-placeholder {
+                color: lightslategrey;
+                font-style: italic;
+            }
+            &:-moz-placeholder{
+                color: lightslategrey;
+                font-style: italic;
+            }
+    
+            &::-moz-placeholder {
+                color: lightslategrey;
+                font-style: italic;
+            }
+    
+            &:focus, &:active {
+                background: $font-light;
+            }
+        }
+        button {
+            width: 200px;
+            max-width: 60%;   
+        }
+    }
+
+    @media screen and (min-width: 710px) {
+        p {
+            padding-bottom: 2rem;
+            width: 80%;
+        }
+    }
+        
+    @media screen and (min-width: 800px) {
+        form {
+            .inputFields {
+                margin-top: 5rem;
+            }
+            textarea {
+                width: 80%;
+                max-width: 400px;
+                height: 80vw;
+                max-height: 300px;
+                margin: 0;
+            }
+        }
+        
+    }
+
+
+    @media screen and (min-width: 1171px) {
+        p {
+            padding-bottom: 2rem;
+            width: 50%;
+        }
+    } 
+} /* end contact session */

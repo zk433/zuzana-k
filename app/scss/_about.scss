@@ -1,0 +1,56 @@
+.about {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        max-width: 485px;
+        margin: 0 auto;
+        font-size: 2rem;
+        color: $font-offblack;
+    }
+    p {
+        margin: 0 auto;
+        text-align: center;        
+        color: $font-grey;
+        line-height: 1.8;
+        padding: 0 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        color: $green-link;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    button {
+        margin: 2rem;
+        margin-bottom: .5rem;
+        width: 250px;
+        max-width: 60%;
+
+        a {
+            color: $font-light;
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 710px) {
+        p {
+            padding-bottom: 2rem;
+            width: 80%;
+        }
+
+        button {
+            width: 10.625rem;
+        }
+    }
+
+    @media screen and (min-width: 1171px) {
+        p {
+            padding-bottom: 2rem;
+            width: 50%;
+        }
+    }
+}

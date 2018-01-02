@@ -1,0 +1,48 @@
+.button-pink {
+
+    background-color: $pink;
+    border: none;
+    padding: 15px 30px;
+    color: $font-light;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.button-grey {
+    background-color: $dark-grey;
+    border: none;
+    padding: 15px 30px;
+    color: $font-light;
+    letter-spacing: 1px;
+
+    a {
+        color: $font-light;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
+button {
+    outline: grey;
+    transition: all .3s;
+    
+    a {
+        color: $font-light;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(black, .2);
+    }
+}

@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 *.afdesign
 node_modules/
+=======
+node_modules
+
+*.afdesign
+
+>>>>>>> version1.0
