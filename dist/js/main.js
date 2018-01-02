@@ -56,6 +56,7 @@ $(document).ready(function() {
 });
 
 //retro clock function
+/*
 var hourHand = document.querySelector('.hours'),
 minuteHand = document.querySelector('.minutes'),
 secondHand = document.querySelector('.seconds');
@@ -88,3 +89,4 @@ function localTime() {
 setInterval(localTime, 1000);
 
 localTime();
+*/
