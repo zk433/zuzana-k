@@ -40,6 +40,12 @@ gulp.task('fonts', function(){
     .pipe(gulp.dest('dist/fonts'))
 });
 
+// Task to copy html files to dist folder ready for production
+gulp.task('html', function () {
+    return gulp.src('app/*.html')
+        .pipe(gulp.dest('dist'));
+});
+
 // Task to move js file to dist folder ready for production
 gulp.task('js', function(){
     return gulp.src('app/js/**/*')
@@ -50,14 +56,15 @@ gulp.task('js', function(){
 gulp.task('clean:dist', function(){
     return del.sync('dist');
 });
-
+/* *********************************************** */
 // Task to prepare files for production - need to run individually
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-    ['sass', 'images', 'js', 'fonts'],
+    ['html', 'sass', 'images', 'js', 'fonts'],
     callback
     )
 });
+/* *********************************************** */
 
 // Task to watch files for changes and refresh browser automatically
 gulp.task('watch', ['browserSync', 'sass' ], function(){
