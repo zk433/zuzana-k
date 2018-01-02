@@ -352,7 +352,8 @@ button {
       border: none;
       border-bottom: 1px solid #ffffff;
       outline-color: #F7659B;
-      color: #ffffff; }
+      color: #ffffff;
+      font-size: 1.2rem; }
       .contact form input:focus, .contact form input:active {
         background: none;
         color: #ffffff; }
@@ -366,7 +367,8 @@ button {
       max-height: 300px;
       border: none;
       color: #808080;
-      padding: 1rem; }
+      padding: 1rem;
+      font-size: 1.2rem; }
       .contact form textarea::-webkit-input-placeholder {
         color: lightslategrey;
         font-style: italic; }

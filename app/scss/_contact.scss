@@ -44,6 +44,7 @@
             border-bottom: 1px solid $font-light;
             outline-color: $pink;
             color: $font-light;
+            font-size: 1.2rem;
 
             &:focus, &:active {
                
@@ -62,6 +63,7 @@
             border: none;
             color: $font-grey;
             padding: 1rem;
+            font-size: 1.2rem;
     
             &::-webkit-input-placeholder {
                 color: lightslategrey;
