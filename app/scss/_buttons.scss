@@ -1,5 +1,5 @@
 .button-pink {
-
+    font-size: 1rem;
     background-color: $pink;
     border: none;
     padding: 15px 30px;
@@ -14,17 +14,18 @@
     padding: 15px 30px;
     color: $font-light;
     letter-spacing: 1px;
+    font-weight: 700;
 
     a {
-        color: $font-light;
         text-decoration: none;
-        font-weight: 700;
+        
     }
 }
 button {
     outline: grey;
     transition: all .3s;
-    
+    font-size: 1rem;
+
     a {
         color: $font-light;
         text-decoration: none;

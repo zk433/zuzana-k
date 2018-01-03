@@ -239,6 +239,7 @@ footer .copyright {
     margin: 10px; }
 
 .button-pink {
+  font-size: 1rem;
   background-color: #F7659B;
   border: none;
   padding: 15px 30px;
@@ -251,15 +252,15 @@ footer .copyright {
   border: none;
   padding: 15px 30px;
   color: #ffffff;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-weight: 700; }
   .button-grey a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700; }
+    text-decoration: none; }
 
 button {
   outline: grey;
-  transition: all .3s; }
+  transition: all .3s;
+  font-size: 1rem; }
   button a {
     color: #ffffff;
     text-decoration: none;
