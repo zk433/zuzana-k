@@ -341,10 +341,15 @@ button {
     font-size: 1.2rem; }
   .contact form {
     text-align: center; }
-    .contact form label {
+    .contact form .nameLabel, .contact form .emailLabel {
       display: inline-block;
       text-align: right;
       margin-right: 1rem;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .contact form .messageLabel {
+      display: inline-block;
+      margin: 0 auto;
       text-transform: uppercase;
       font-weight: 700; }
     .contact form input {
@@ -390,6 +395,9 @@ button {
   @media screen and (min-width: 800px) {
     .contact form .inputFields {
       margin-top: 5rem; }
+    .contact form .messageLabel {
+      margin-right: 70%;
+      display: inline-block; }
     .contact form textarea {
       width: 80%;
       max-width: 400px;

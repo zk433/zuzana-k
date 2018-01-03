@@ -30,10 +30,17 @@
     form {
         text-align: center;
 
-        label {
+        .nameLabel, .emailLabel {
             display: inline-block;
             text-align: right;
             margin-right: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .messageLabel {
+            display: inline-block;
+            margin: 0 auto;
             text-transform: uppercase;
             font-weight: 700;
         }
@@ -101,6 +108,12 @@
             .inputFields {
                 margin-top: 5rem;
             }
+
+            .messageLabel {
+                margin-right: 70%;
+                display: inline-block
+
+            }
             textarea {
                 width: 80%;
                 max-width: 400px;
@@ -111,7 +124,6 @@
         }
         
     }
-
 
     @media screen and (min-width: 1171px) {
         p {
