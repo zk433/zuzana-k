@@ -17,33 +17,18 @@
         padding: 0 1rem 2rem;
         font-size: 1.2rem;
     }
+
+    .button {
+        display: inline-block;
+        width: 12rem;
+        max-width: 12rem;
+        margin: 1rem;
+    }
     
-    a {
-        color: $green-link;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    button {
-        margin: 2rem;
-        margin-bottom: .5rem;
-        width: 250px;
-        max-width: 60%;
-
-        a {
-            color: $font-light;
-            display: block;
-        }
-    }
-
     @media screen and (min-width: 710px) {
         p {
             padding-bottom: 2rem;
             width: 80%;
-        }
-
-        button {
-            width: 10.625rem;
         }
     }
 
