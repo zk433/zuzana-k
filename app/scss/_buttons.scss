@@ -15,22 +15,14 @@
     color: $font-light;
     letter-spacing: 1px;
     font-weight: 700;
-
-    a {
-        text-decoration: none;
-        
-    }
 }
-button {
+a.button, button {
     outline: grey;
     transition: all .3s;
     font-size: 1rem;
-
-    a {
-        color: $font-light;
-        text-decoration: none;
-        font-weight: 700;
-    }
+    color: $font-light;
+    text-decoration: none;
+    font-weight: 700;
 
     &:hover {
         transform: translateY(-3px);

@@ -254,24 +254,21 @@ footer .copyright {
   color: #ffffff;
   letter-spacing: 1px;
   font-weight: 700; }
-  .button-grey a {
-    text-decoration: none; }
 
-button {
+a.button, button {
   outline: grey;
   transition: all .3s;
-  font-size: 1rem; }
-  button a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700; }
-  button:hover {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700; }
+  a.button:hover, button:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    button:hover::after {
+    a.button:hover::after, button:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  button:active {
+  a.button:active, button:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -293,26 +290,16 @@ button {
   padding: 0 1rem 2rem;
   font-size: 1.2rem; }
 
-.about a {
-  color: #388087;
-  font-weight: 700;
-  text-decoration: none; }
-
-.about button {
-  margin: 2rem;
-  margin-bottom: .5rem;
-  width: 250px;
-  max-width: 60%; }
-  .about button a {
-    color: #ffffff;
-    display: block; }
+.about .button {
+  display: inline-block;
+  width: 12rem;
+  max-width: 12rem;
+  margin: 1rem; }
 
 @media screen and (min-width: 710px) {
   .about p {
     padding-bottom: 2rem;
-    width: 80%; }
-  .about button {
-    width: 10.625rem; } }
+    width: 80%; } }
 
 @media screen and (min-width: 1171px) {
   .about p {
