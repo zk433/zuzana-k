@@ -28,7 +28,7 @@
         margin: 0 auto 4rem;
         background-color: white;
         transition: all .3s;
-        height: 900px;
+        height: 930px;
         position: relative;
 
         &:hover {
@@ -100,8 +100,9 @@
                 flex-direction: column;
                 justify-content: center;
                 
-                button {
-                    max-width: 80%;
+                .button {
+                    width: 60%;
+                    min-width: 200px;
                     margin: 0 auto;
                 }
             }

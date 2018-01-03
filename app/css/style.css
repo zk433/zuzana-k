@@ -496,7 +496,7 @@ a.button, button {
   margin: 0 auto 4rem;
   background-color: white;
   transition: all .3s;
-  height: 900px;
+  height: 930px;
   position: relative; }
   .services .card:hover {
     transform: translateY(-10px);
@@ -543,8 +543,9 @@ a.button, button {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .services .card .insideCard .buttonWrapper button {
-        max-width: 80%;
+      .services .card .insideCard .buttonWrapper .button {
+        width: 60%;
+        min-width: 200px;
         margin: 0 auto; }
 
 @media screen and (min-width: 500px) {
