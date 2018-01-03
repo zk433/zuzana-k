@@ -5,6 +5,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var htmlmin = require('gulp-htmlmin');
 
 // Task to start the server and refresh the browser
 gulp.task('browserSync', function(){
@@ -26,6 +27,12 @@ gulp.task('sass', function(){
     }))
     .pipe(gulp.dest('dist/css'))
 });
+// Task to minify html
+gulp.task('minify', function() {
+  return gulp.src('app/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'));
+});
 
 // Task to minify images
 gulp.task('images', function(){
@@ -34,17 +41,11 @@ gulp.task('images', function(){
     .pipe(gulp.dest('dist/assets'))
 });
 
-// task to move fonts to dist folder ready for production
-gulp.task('fonts', function(){
-    return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-});
-
 // Task to copy html files to dist folder ready for production
-gulp.task('html', function () {
-    return gulp.src('app/*.html')
-        .pipe(gulp.dest('dist'));
-});
+// gulp.task('html', function () {
+//     return gulp.src('app/*.html')
+//         .pipe(gulp.dest('dist'));
+// });
 
 // Task to move js file to dist folder ready for production
 gulp.task('js', function(){
@@ -60,7 +61,7 @@ gulp.task('clean:dist', function(){
 // Task to prepare files for production - need to run individually
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-    ['html', 'sass', 'images', 'js', 'fonts'],
+    ['minify', 'sass', 'images', 'js'],
     callback
     )
 });
