@@ -1,4 +1,23 @@
-// Navbar 
+// Skiplink
+
+.skip {
+  position: absolute;
+  color: $font-offblack;
+  top: -10rem;
+  left: -10rem;
+  z-index: 10;
+  text-align: left;
+  overflow: hidden;
+
+    &:active, &:focus, &:hover {
+        left: 0; 
+        top: 0;
+        z-index: 10;
+        width: 100px; 
+        height: auto; 
+        overflow: visible; 
+  }
+}
 
 // Outer navigation wrapper
 .navigation {
