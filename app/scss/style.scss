@@ -29,6 +29,11 @@ main {
     padding: 0;
 }
 
+*:focus, a:focus {
+    outline: 2px dashed red;
+}
+ 
+
 .wrapper-center {
     display: block;
     text-align: center;
@@ -37,4 +42,3 @@ main {
 .wrapper {
     padding: 7rem 0;
 }
- 

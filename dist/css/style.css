@@ -360,7 +360,6 @@ a.button, button {
       background: transparent;
       border: none;
       border-bottom: 1px solid #ffffff;
-      outline-color: #F7659B;
       color: #ffffff;
       font-size: 1.2rem; }
       .contact form input:focus, .contact form input:active {
@@ -769,6 +768,9 @@ body {
 main {
   margin: 0;
   padding: 0; }
+
+*:focus, a:focus {
+  outline: 2px dashed red; }
 
 .wrapper-center {
   display: block;
