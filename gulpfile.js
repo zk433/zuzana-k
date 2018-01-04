@@ -6,6 +6,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var htmlmin = require('gulp-htmlmin');
+var cssnano = require('gulp-cssnano');
 
 // Task to start the server and refresh the browser
 gulp.task('browserSync', function(){
@@ -17,7 +18,7 @@ gulp.task('browserSync', function(){
     })
 });
 
-// Task to compile sass to css and copy it to the dist folder
+// Task to compile sass to css, minify css and copy it to the dist folder
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
@@ -25,6 +26,7 @@ gulp.task('sass', function(){
     .pipe(browserSync.reload({
         stream: true
     }))
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 });
 // Task to minify html
@@ -40,12 +42,6 @@ gulp.task('images', function(){
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/assets'))
 });
-
-// Task to copy html files to dist folder ready for production
-// gulp.task('html', function () {
-//     return gulp.src('app/*.html')
-//         .pipe(gulp.dest('dist'));
-// });
 
 // Task to move js file to dist folder ready for production
 gulp.task('js', function(){
