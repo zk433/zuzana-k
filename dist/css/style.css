@@ -434,58 +434,46 @@ a.button, button {
     padding: 0 1rem 5rem;
     font-size: 1.2rem;
     max-width: 600px; }
-  .portfolio .item1, .portfolio .item2, .portfolio .item3 {
+  .portfolio .item {
     height: 100vw;
+    overflow: hidden;
+    position: relative;
     margin-bottom: 1rem; }
-  .portfolio .item1 {
-    background: url("../assets/images/clock.jpg");
-    background-size: cover;
-    background-position: 25% 28%; }
-  .portfolio .item2 {
-    background: url("../assets/images/materialDesign.jpg");
-    background-size: cover;
-    background-position: center; }
-  .portfolio .item3 {
-    background: url("../assets/images/agency.jpg");
-    background-size: cover;
-    background-position: 25% 0%; }
+  .portfolio .item1 > img {
+    width: 100%;
+    position: absolute;
+    top: -6rem; }
+  .portfolio .item2 > img {
+    width: 100%;
+    position: absolute; }
+  .portfolio .item3 > img {
+    width: 150%;
+    position: absolute;
+    right: -10rem; }
   @media only screen and (min-width: 500px) and (max-width: 799px) {
-    .portfolio .item1, .portfolio .item2, .portfolio .item3 {
+    .portfolio .item {
       max-width: 90%;
       height: 90vw;
       margin: 0 auto;
       margin-bottom: 2rem; } }
   @media only screen and (min-width: 800px) {
-    .portfolio .item1, .portfolio .item2, .portfolio .item3 {
-      height: 33.33vw; }
-    .portfolio .item1 {
-      background: linear-gradient(rgba(25, 114, 120, 0.5), rgba(25, 114, 120, 0.5)), url("../assets/images/clock.jpg");
-      background-size: cover;
-      background-position: 25% 28%;
+    .portfolio .item {
+      height: 33.33vw;
+      border: 15px solid white; }
+    .portfolio .item1 > img {
+      transition: all 1s; }
+      .portfolio .item1 > img:hover {
+        top: -7rem; }
+    .portfolio .item2 > img {
+      top: 0;
+      transition: all 1s; }
+      .portfolio .item2 > img:hover {
+        top: -43rem; }
+    .portfolio .item3 > img {
       transition: all 1s;
-      position: relative; }
-      .portfolio .item1:hover {
-        background: url("../assets/images/clock.jpg");
-        background-size: cover;
-        background-position: 0% 32%; }
-    .portfolio .item2 {
-      background: linear-gradient(rgba(247, 101, 155, 0.5), rgba(247, 101, 155, 0.5)), url("../assets/images/materialDesign.jpg");
-      background-size: cover;
-      background-position: left center;
-      transition: all 1s; }
-      .portfolio .item2:hover {
-        background: url("../assets/images/materialDesign.jpg");
-        background-size: cover;
-        background-position: right center; }
-    .portfolio .item3 {
-      background: linear-gradient(rgba(50, 54, 64, 0.5), rgba(50, 54, 64, 0.5)), url("../assets/images/agency.jpg");
-      background-size: cover;
-      background-position: 25% 0%;
-      transition: all 1s; }
-      .portfolio .item3:hover {
-        background: url("../assets/images/agency.jpg");
-        background-size: cover;
-        background-position: 25% 60%; } }
+      left: 0rem; }
+      .portfolio .item3 > img:hover {
+        left: -14rem; } }
 
 .services h2 {
   text-align: center;
