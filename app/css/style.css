@@ -219,6 +219,7 @@ nav {
 
 #nav-toggle {
   border: none;
+  box-shadow: none;
   position: absolute;
   left: 13px;
   top: 15px;
@@ -227,6 +228,7 @@ nav {
   #nav-toggle span,
   #nav-toggle span:before,
   #nav-toggle span:after {
+    color: transparent;
     cursor: pointer;
     border-radius: 1px;
     height: 5px;
