@@ -136,6 +136,8 @@ nav {
   }
 }
 #nav-toggle {
+    border: none;
+    box-shadow: none;
     position: absolute;
     left: 13px;
     top: 15px;
@@ -144,6 +146,7 @@ nav {
     span,
     span:before,
     span:after {
+      color: transparent;
     cursor: pointer;
     border-radius: 1px;
     height: 5px;
