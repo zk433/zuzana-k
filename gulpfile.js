@@ -38,7 +38,7 @@ gulp.task('minify', function() {
 
 // Task to minify images
 gulp.task('images', function(){
-    return gulp.src('app/assets/images/*.+(png|jpg|svg)')
+    return gulp.src('app/assets/**/*.+(png|jpg|svg)')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/assets'))
 });
