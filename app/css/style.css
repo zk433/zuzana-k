@@ -218,6 +218,7 @@ nav {
     display: block !important; } }
 
 #nav-toggle {
+  border: none;
   position: absolute;
   left: 13px;
   top: 15px;
