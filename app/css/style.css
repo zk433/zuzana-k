@@ -332,7 +332,7 @@ a.button, button {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.about h2 {
+.welcome h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -342,7 +342,7 @@ a.button, button {
   font-size: 2rem;
   color: #333333; }
 
-.about p {
+.welcome p {
   margin: 0 auto;
   text-align: center;
   color: #808080;
@@ -350,19 +350,19 @@ a.button, button {
   padding: 0 1rem 2rem;
   font-size: 1.2rem; }
 
-.about .button {
+.welcome .button {
   display: inline-block;
   width: 12rem;
   max-width: 12rem;
   margin: 1rem; }
 
 @media screen and (min-width: 710px) {
-  .about p {
+  .welcome p {
     padding-bottom: 2rem;
     width: 80%; } }
 
 @media screen and (min-width: 1171px) {
-  .about p {
+  .welcome p {
     padding-bottom: 2rem;
     width: 50%; } }
 
@@ -389,6 +389,8 @@ a.button, button {
     font-size: 1.2rem; }
   .contact form {
     text-align: center; }
+    .contact form p {
+      display: none; }
     .contact form .nameLabel, .contact form .emailLabel {
       display: inline-block;
       text-align: right;
@@ -489,7 +491,7 @@ a.button, button {
   .portfolio .item3 > img {
     width: 120%;
     position: absolute;
-    left: -2rem; }
+    left: -2.8rem; }
   @media only screen and (min-width: 500px) and (max-width: 799px) {
     .portfolio .item {
       max-width: 90%;
@@ -504,20 +506,16 @@ a.button, button {
     .portfolio .item {
       height: 33.33vw;
       border: 15px solid white; }
-<<<<<<< HEAD
-    .portfolio .item1 > img, .portfolio .item2 > img {
-=======
     .portfolio .item1 > img {
       top: 0;
-      transition: all 1s; }
+      transition: all 3s; }
       .portfolio .item1 > img:hover {
         top: -35rem; }
     .portfolio .item2 > img {
->>>>>>> master
       top: 0;
-      transition: all 1s; }
-      .portfolio .item1 > img:hover, .portfolio .item2 > img:hover {
-        top: -41rem; }
+      transition: all 3s; }
+      .portfolio .item2 > img:hover {
+        top: -37rem; }
     .portfolio .item3 > img {
       transition: all 1s;
       left: -2.8rem; }

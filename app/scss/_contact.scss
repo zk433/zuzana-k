@@ -30,6 +30,10 @@
     form {
         text-align: center;
 
+        p {
+            display: none;
+        }
+
         .nameLabel, .emailLabel {
             display: inline-block;
             text-align: right;

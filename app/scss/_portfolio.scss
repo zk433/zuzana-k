@@ -40,7 +40,7 @@
     .item3>img {
         width: 120%;
         position: absolute;
-        left: -2rem;
+        left: -2.8rem;
     }
 
     @media only screen and (min-width: 500px) and (max-width: 799px) {
@@ -66,19 +66,19 @@
 
         .item1>img { 
             top: 0;
-            transition: all 1s;
+            transition: all 3s;
             
             &:hover {
                 top: -35rem;
             }
         }
 
-        .item1>img, .item2>img {
+        .item2>img {
             top: 0;
-            transition: all 1s;
+            transition: all 3s;
             
             &:hover {
-                top: -41rem;
+                top: -37rem;
             }
         }
 

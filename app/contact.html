@@ -37,7 +37,7 @@
                 <div class="nav-mobile"><button id="nav-toggle"><span>Mobile menu</span></button></div>
                     <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About me</a></li>
+                    <li><a href="index.html#welcome">About me</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -75,7 +75,10 @@
                     </div>
 
                     <div class="row">    
-                        <form action="success.html" data-netlify="true" name="contactMe" netlify>
+                        <form netlify-honeypot="bot-field" action="success.html" data-netlify="true" name="contactMe" netlify >
+                            <p class="hidden">
+                                <label>Don’t fill this out: <input name="bot-field"></label>
+                            </p>
                             <div class="column half">
                                 <div class="inputFields">
                                     <div>
@@ -115,7 +118,7 @@
                         <div class="nav-right">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="index.html#about">About me</a></li>
+                                <li><a href="index.html#welcome">About me</a></li>
                                 <li><a href="index.html#portfolio">Portfolio</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="blog.html">Blog</a></li>
