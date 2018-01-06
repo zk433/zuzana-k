@@ -32,16 +32,15 @@
         margin-bottom: 1rem;
     }
 
-    .item1>img {
+    .item1>img, .item2>img {
         width: 100%;
         position: absolute;
-        top: -6rem;
     }
 
-    .item2>img {
-        width: 100%;
-        position: absolute;
-    }
+    // .item2>img {
+    //     width: 100%;
+    //     position: absolute;
+    // }
 
     .item3>img {
         width: 150%;
@@ -65,15 +64,15 @@
             border: 15px solid white;
         }
 
-        .item1>img { 
-            transition: all 1s;
+        // .item1>img { 
+        //     transition: all 1s;
             
-            &:hover {
-                top: -7rem;
-            }
-        }
+        //     &:hover {
+        //         top: -7rem;
+        //     }
+        // }
 
-        .item2>img {
+        .item1>img, .item2>img {
             top: 0;
             transition: all 1s;
             

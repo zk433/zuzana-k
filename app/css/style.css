@@ -483,11 +483,7 @@ a.button, button {
     overflow: hidden;
     position: relative;
     margin-bottom: 1rem; }
-  .portfolio .item1 > img {
-    width: 100%;
-    position: absolute;
-    top: -6rem; }
-  .portfolio .item2 > img {
+  .portfolio .item1 > img, .portfolio .item2 > img {
     width: 100%;
     position: absolute; }
   .portfolio .item3 > img {
@@ -504,14 +500,10 @@ a.button, button {
     .portfolio .item {
       height: 33.33vw;
       border: 15px solid white; }
-    .portfolio .item1 > img {
-      transition: all 1s; }
-      .portfolio .item1 > img:hover {
-        top: -7rem; }
-    .portfolio .item2 > img {
+    .portfolio .item1 > img, .portfolio .item2 > img {
       top: 0;
       transition: all 1s; }
-      .portfolio .item2 > img:hover {
+      .portfolio .item1 > img:hover, .portfolio .item2 > img:hover {
         top: -41rem; }
     .portfolio .item3 > img {
       transition: all 1s;
