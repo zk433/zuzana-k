@@ -483,31 +483,32 @@ a.button, button {
     overflow: hidden;
     position: relative;
     margin-bottom: 1rem; }
-  .portfolio .item1 > img {
-    width: 100%;
-    position: absolute;
-    top: -6rem; }
-  .portfolio .item2 > img {
+  .portfolio .item1 > img, .portfolio .item2 > img {
     width: 100%;
     position: absolute; }
   .portfolio .item3 > img {
-    width: 150%;
+    width: 120%;
     position: absolute;
-    right: -10rem; }
+    left: -2rem; }
   @media only screen and (min-width: 500px) and (max-width: 799px) {
     .portfolio .item {
       max-width: 90%;
       height: 90vw;
       margin: 0 auto;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+    .portfolio .item3 > img {
+      width: 120%;
+      position: absolute;
+      left: -3rem; } }
   @media only screen and (min-width: 800px) {
     .portfolio .item {
       height: 33.33vw;
       border: 15px solid white; }
     .portfolio .item1 > img {
+      top: 0;
       transition: all 1s; }
       .portfolio .item1 > img:hover {
-        top: -7rem; }
+        top: -35rem; }
     .portfolio .item2 > img {
       top: 0;
       transition: all 1s; }
@@ -515,9 +516,9 @@ a.button, button {
         top: -41rem; }
     .portfolio .item3 > img {
       transition: all 1s;
-      left: 0rem; }
+      left: -2.8rem; }
       .portfolio .item3 > img:hover {
-        left: -14rem; } }
+        left: -4rem; } }
 
 .services h2 {
   text-align: center;
