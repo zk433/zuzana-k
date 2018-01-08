@@ -41,7 +41,8 @@
   background-position: center;
   height: 620px;
   max-height: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  border-bottom: 4px solid #F7659B; }
   .hero-blog .tagline {
     padding: 20px;
     color: #ffffff;
@@ -82,7 +83,8 @@
   background-position: center;
   height: 620px;
   max-height: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  border-bottom: 4px solid #F7659B; }
   .hero-main .tagline {
     padding: 20px;
     color: #ffffff;
@@ -331,6 +333,39 @@ a.button, button {
   a.button:active, button:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.about {
+  background: white; }
+  .about h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 3rem;
+    max-width: 485px;
+    margin: 0 auto;
+    font-size: 2rem; }
+  .about p {
+    margin: 0 auto;
+    text-align: left;
+    color: #808080;
+    line-height: 1.8;
+    padding: 0 1rem 2rem;
+    font-size: 1.2rem; }
+    .about p:last-child {
+      background: #F2F2F2;
+      padding: 1rem;
+      font-size: 1rem;
+      margin: .5rem; }
+  @media screen and (min-width: 710px) {
+    .about p {
+      padding-bottom: 2rem;
+      width: 80%; }
+      .about p:last-child {
+        margin: 0 auto;
+        padding: 1rem; } }
+  @media screen and (min-width: 1171px) {
+    .about p {
+      width: 60%; } }
 
 .welcome h2 {
   text-align: center;
@@ -865,23 +900,3 @@ main {
 
 a {
   color: #F7659B; }
-
-.about {
-  background: white; }
-  .about h2 {
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 3rem;
-    font-size: 2rem; }
-  .about p {
-    width: 60%;
-    margin: 0 auto;
-    text-align: left;
-    color: #808080;
-    line-height: 1.8;
-    padding: 0 1rem 2rem;
-    font-size: 1.2rem; }
-    .about p:last-child {
-      background: #F2F2F2;
-      padding: 1rem;
-      font-size: 1rem; }

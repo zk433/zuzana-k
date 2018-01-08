@@ -1,0 +1,50 @@
+.about {
+    background: white;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        max-width: 485px;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0 auto;
+        text-align: left;        
+        color: $font-grey;
+        line-height: 1.8;
+        padding: 0 1rem 2rem;
+        font-size: 1.2rem;
+
+        &:last-child {
+            background: $background-grey;
+            padding: 1rem;
+            font-size: 1rem;
+            margin: .5rem;
+        }
+    }
+
+    @media screen and (min-width: 710px) {
+        p {
+            padding-bottom: 2rem;
+            width: 80%;
+
+            &:last-child {
+                margin: 0 auto;
+                
+                padding: 1rem;
+               
+            }
+        }
+
+    }
+
+    @media screen and (min-width: 1171px) {
+        p {
+            width: 60%;
+        }
+    }
+}
