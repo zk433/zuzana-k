@@ -43,9 +43,13 @@ main {
 }
 
 .wrapper {
-    padding: 7rem 0;
+    padding: 6rem 0;
 }
 
 a {
     color: $pink;
 }
+
+.offset{
+    margin-top:-500px;
+   }
