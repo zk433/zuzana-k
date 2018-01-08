@@ -1,5 +1,5 @@
 .services {
-
+    background-color: white;
 
     h2 {
         text-align: center;
@@ -23,10 +23,9 @@
     }
 
     .card {
-        
         max-width: 90%;
         margin: 0 auto 4rem;
-        background-color: white;
+        background-color: #f9f9f9;
         transition: all .3s;
         height: 930px;
         position: relative;
