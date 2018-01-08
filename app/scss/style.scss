@@ -10,6 +10,7 @@
 @import '_services';
 @import '_clock';
 @import '_success';
+@import '_blog';
 
 html {
     box-sizing: border-box;
@@ -43,4 +44,35 @@ main {
 
 .wrapper {
     padding: 7rem 0;
+}
+
+a {
+    color: $pink;
+}
+//////////////////
+.about {
+    background: white;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;        
+        color: $font-grey;
+        line-height: 1.8;
+        padding: 0 1rem 2rem;
+        font-size: 1.2rem;
+
+        &:last-child {
+            background: $background-grey;
+            padding: 1rem;
+            font-size: 1rem;
+        }
+    }
 }
