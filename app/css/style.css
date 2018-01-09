@@ -845,18 +845,29 @@ a.button, button {
 .blog {
   background-color: white; }
   .blog h2 {
-    font-size: 2.5rem;
-    margin: 0 auto;
-    max-width: 60%;
-    text-align: center;
-    padding-bottom: 5rem; }
+    padding-bottom: 1rem;
+    font-size: 1.8rem; }
+  .blog h3 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem; }
+  .blog .tags {
+    margin-top: 5%; }
   .blog aside {
-    margin-top: 2.5rem; }
+    padding: 1rem; }
     .blog aside h3 {
       font-weight: 400;
-      font-style: italic; }
-    .blog aside ul li {
-      list-style-type: square; }
+      font-style: italic;
+      font-size: 1.2rem; }
+    .blog aside ul {
+      padding: 0; }
+      .blog aside ul li {
+        list-style-type: square;
+        display: inline;
+        padding: 0 1rem;
+        font-style: italic; }
+        .blog aside ul li:first-of-type {
+          padding: 0; }
   .blog p {
     font-size: 1.2rem; }
     .blog p:nth-child(1) {
@@ -868,7 +879,7 @@ a.button, button {
       padding: 1rem;
       font-size: 1rem; }
   .blog article {
-    padding-bottom: 3rem; }
+    padding: 1rem; }
 
 html {
   box-sizing: border-box; }
