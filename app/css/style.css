@@ -581,7 +581,7 @@ a.button, button {
     margin: 0 auto 4rem;
     background-color: #f9f9f9;
     transition: all .3s;
-    height: 930px;
+    height: auto;
     position: relative; }
     .services .card:hover {
       transform: translateY(-10px);
@@ -622,7 +622,7 @@ a.button, button {
       .services .card .insideCard .buttonWrapper {
         text-align: center;
         position: absolute;
-        height: 80px;
+        height: 15.625rem;
         width: 100%;
         bottom: 0;
         display: flex;
@@ -631,7 +631,7 @@ a.button, button {
         .services .card .insideCard .buttonWrapper .button {
           width: 60%;
           min-width: 200px;
-          margin: 0 auto; }
+          margin: 11.875rem auto 0; }
   @media screen and (min-width: 500px) {
     .services .card {
       max-width: 70%;
@@ -639,7 +639,8 @@ a.button, button {
   @media screen and (min-width: 800px) {
     .services .card {
       max-width: 90%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      height: 930px; } }
 
 #clock {
   background: white; }
