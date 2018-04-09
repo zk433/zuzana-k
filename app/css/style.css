@@ -515,47 +515,10 @@ a.button, button {
     padding: 0 1rem 5rem;
     font-size: 1.2rem;
     max-width: 600px; }
-  .portfolio .item {
-    height: 100vw;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1rem; }
-  .portfolio .item1 > img, .portfolio .item2 > img {
-    width: 100%;
-    position: absolute; }
-  .portfolio .item3 > img {
-    width: 120%;
-    position: absolute;
-    left: -2.8rem; }
-  @media only screen and (min-width: 500px) and (max-width: 799px) {
-    .portfolio .item {
-      max-width: 90%;
-      height: 90vw;
-      margin: 0 auto;
-      margin-bottom: 2rem; }
-    .portfolio .item3 > img {
-      width: 120%;
-      position: absolute;
-      left: -3rem; } }
-  @media only screen and (min-width: 800px) {
-    .portfolio .item {
-      height: 33.33vw;
-      border: 15px solid white; }
-    .portfolio .item1 > img {
-      top: 0;
-      transition: all 3s; }
-      .portfolio .item1 > img:hover {
-        top: -35rem; }
-    .portfolio .item2 > img {
-      top: 0;
-      transition: all 3s; }
-      .portfolio .item2 > img:hover {
-        top: -37rem; }
-    .portfolio .item3 > img {
-      transition: all 1s;
-      left: -2.8rem; }
-      .portfolio .item3 > img:hover {
-        left: -4rem; } }
+    .portfolio p.testimonial {
+      background: #F2F2F2;
+      padding: 1rem;
+      font-size: 1rem; }
 
 .services {
   background-color: white; }

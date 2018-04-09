@@ -23,73 +23,13 @@
         padding: 0 1rem 5rem;
         font-size: 1.2rem;
         max-width: 600px;
-    }
 
-    .item {
-        height: 100vw;
-        overflow:hidden;
-        position: relative;
-        margin-bottom: 1rem;
-    }
-
-    .item1>img, .item2>img {
-        width: 100%;
-        position: absolute;
-    }
-
-    .item3>img {
-        width: 120%;
-        position: absolute;
-        left: -2.8rem;
-    }
-
-    @media only screen and (min-width: 500px) and (max-width: 799px) {
-        .item {
-            max-width: 90%;
-            height: 90vw;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-        }
-
-        .item3>img {
-            width: 120%;
-            position: absolute;
-            left: -3rem;
+        &.testimonial {
+            background: $background-grey;
+            padding: 1rem;
+            font-size: 1rem;
         }
     }
 
-    @media only screen and (min-width: 800px) {
-        .item{
-            height: 33.33vw;
-            border: 15px solid white;
-        }
 
-        .item1>img { 
-            top: 0;
-            transition: all 3s;
-            
-            &:hover {
-                top: -35rem;
-            }
-        }
-
-        .item2>img {
-            top: 0;
-            transition: all 3s;
-            
-            &:hover {
-                top: -37rem;
-            }
-        }
-
-        .item3>img {
-            transition: all 1s;
-            left: -2.8rem;
-
-            &:hover {
-                
-                left: -4rem;
-            }
-        }
-    }
 }   
