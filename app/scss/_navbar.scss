@@ -27,6 +27,7 @@
   top: 0;
   width: 100%;
   z-index: 9;
+  font-family: 'Hind', sans-serif;
 }
 
 // Logo and branding
@@ -84,7 +85,14 @@ nav {
           background: $pink;
           color: $font-light;
         }
-       
+        &.active {
+          color: $pink;
+
+           &:hover {
+             color: $font-light;
+           }
+        }
+
       } 
     }
   }
