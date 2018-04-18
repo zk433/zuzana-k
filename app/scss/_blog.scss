@@ -10,6 +10,7 @@
         font-weight: 400;
         font-style: italic;
         font-size: 1.5rem;
+        color: $font-grey;
     }
 
     .tags {
@@ -23,6 +24,7 @@
             font-weight: 400;
             font-style: italic;
             font-size: 1.2rem;
+            color: $font-grey;
         }
         ul {
             padding: 0;
@@ -42,6 +44,7 @@
     p {
         font-size: 1.2rem;
         line-height: 1.8;
+        color: $font-grey;
 
         &:nth-child(1){
             font-size: 1.7rem;
