@@ -8,6 +8,15 @@ $(document).ready(function() {
         $('.nav-list').toggle();
     });
 
+    // 
+    var path = $(location).attr('href');
+    var url = path.split('#');
+    if (url[1] == 'portfolio') {
+        $('#port').addClass('active');
+        $('#idx').removeClass('active');
+    }
+
+
         /* Smooth scrolling */
     // Select all links with hashes
     $('a[href*="#"]')

@@ -560,7 +560,7 @@ a.button, button {
     font-size: 1.2rem;
     width: 120%; }
     .services li:before {
-      content: "";
+      content: "\00a0";
       border-left: 4px solid #F7659B; }
   .services .button {
     margin-top: 3rem; }

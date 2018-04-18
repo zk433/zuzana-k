@@ -38,7 +38,7 @@
         width: 120%;
         
         &:before {
-            content:"";
+            content:"\00a0";
             border-left: 4px solid $pink;
         }
     }
