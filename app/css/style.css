@@ -773,27 +773,26 @@ a.button, button {
     font-size: 1.8rem; }
   .blog h3 {
     font-weight: 400;
-    font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #808080; }
   .blog .tags {
     margin-top: 5%; }
   .blog aside {
-    padding: 1rem; }
+    padding: 6.2rem 1rem 0; }
     .blog aside h3 {
       font-weight: 400;
-      font-style: italic;
       font-size: 1.2rem;
-      color: #808080; }
+      color: #808080;
+      padding: 0;
+      margin-top: 0; }
     .blog aside ul {
       padding: 0; }
       .blog aside ul li {
-        list-style-type: square;
-        display: inline;
+        list-style-type: none;
         padding: 0 1rem;
-        font-style: italic; }
-        .blog aside ul li:first-of-type {
-          padding: 0; }
+        font-style: italic;
+        color: #808080;
+        margin: 10px 0; }
   .blog p {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -808,6 +807,15 @@ a.button, button {
       font-size: 1rem; }
   .blog article {
     padding: 1rem; }
+    .blog article blockquote {
+      color: #808080;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      font-style: italic;
+      border-left: 3px solid #F7659B;
+      padding-left: 5px;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
 
 html {
   box-sizing: border-box; }
@@ -834,6 +842,11 @@ main {
 
 .wrapper {
   padding: 6rem 0; }
+
+.wrapper-medium {
+  max-width: 700px;
+  margin: 0 auto;
+  display: block; }
 
 a {
   color: #F7659B; }

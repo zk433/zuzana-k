@@ -8,8 +8,7 @@
 
     h3 {
         font-weight: 400;
-        font-style: italic;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: $font-grey;
     }
 
@@ -18,26 +17,25 @@
     }
 
     aside {
-        padding: 1rem;
+        padding: 6.2rem 1rem 0;
         
         h3 {
             font-weight: 400;
-            font-style: italic;
+            // font-style: italic;
             font-size: 1.2rem;
             color: $font-grey;
+            padding: 0;
+            margin-top: 0;
         }
         ul {
             padding: 0;
 
             li {
-                list-style-type: square;
-                display: inline;
+                list-style-type: none;
                 padding: 0 1rem;
                 font-style: italic;
-
-                &:first-of-type {
-                    padding: 0;
-                }
+                color: $font-grey;
+                margin: 10px 0;
             }
         }
     }
@@ -62,5 +60,16 @@
 
     article {
         padding: 1rem;
+
+        blockquote {
+            color: $font-grey;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-style: italic;
+            border-left: 3px solid $pink;
+            padding-left: 5px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }
